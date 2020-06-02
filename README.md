@@ -1,2 +1,2 @@
-# autolocadora
-Cadastro simples de automóveis
+# autolocadora-backend
+Aplicação Back-end em NodeJS para um cadastro simples de automóveis.
