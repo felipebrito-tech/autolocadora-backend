@@ -1,0 +1,33 @@
+{
+	"vehicles": {
+		"data": [
+			{
+				"id": 123456,
+				"placa": "AAA1234",
+				"chassi": "1234567890ABCDEFG",
+				"renavam": "123456789",
+				"modelo": "Palio",
+				"marca": "Fiat",
+				"ano": "2019"
+			},
+			{
+				"id": 123457,
+				"placa": "AAA1235",
+				"chassi": "1234567890ABCDEFH",
+				"renavam": "123456780",
+				"modelo": "Evoque",
+				"marca": "Range Rover",
+				"ano": "2016"
+			},
+			{
+				"id": 123458,
+				"placa": "AAA1236",
+				"chassi": "1234567890ABCDEFI",
+				"renavam": "123456790",
+				"modelo": "Versa",
+				"marca": "Nissan",
+				"ano": "2020"
+			}
+		]
+	}
+}
