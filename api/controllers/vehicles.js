@@ -1,13 +1,7 @@
 module.exports = app => {
 	const db = require('../../config/database');
-	const uuidv4 = require('uuid').v4;
 	const VehicleDao = require('../dao/vehicle-dao');
-	const vehiclesDB = app.data.vehicles;
 	const controller = {};
-
-	const {
-		vehicles: vehiclesMock
-	} = vehiclesDB;
 
 	controller.listVehicles = (req, res) => {
 		const vehicleDao = new VehicleDao(db);
