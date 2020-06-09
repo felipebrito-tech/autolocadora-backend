@@ -41,7 +41,7 @@ class VehicleDao {
 								return reject({message: error.message});
 							}
 
-							resolve(this.lastID);
+							resolve({'id': this.lastID});
 						});
 		});
 	}

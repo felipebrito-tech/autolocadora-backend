@@ -15,7 +15,7 @@ module.exports = app => {
 		const vehicleDao = new VehicleDao(db);
 
 		vehicleDao.save(req.body)
-		.then(vehicleID => res.redirect(`/api/vehicles/${vehicleID}`))
+		.then(vehicle => res.status(201).json(vehicle))
 		.catch(error => res.status(500).json(error));		
 	}
 
