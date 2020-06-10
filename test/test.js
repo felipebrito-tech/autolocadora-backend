@@ -11,7 +11,19 @@ describe('Vehicles Service API calls', function() {
                 .get('/api/vehicles')
                 .end(function(error, resp) {
                     resp.should.have.status(200);
-                    resp.body.should.be.a('array');
+                    resp.body.should.be.a('array').to.have.lengthOf(3);
+                });
+        });
+    });
+    
+    describe('/GET /api/vehicles/:id', function() {
+        it('GET for vehicles with id 1', function() {
+            chai.request('http://localhost:3000')
+                .get('/api/vehicles/1')
+                .end(function(error, resp) {
+                    resp.should.have.status(200);
+                    resp.body.should.have.property('id').eql(1);
+                    resp.body.should.have.property('modelo').eql('Palio');
                 });
         });
     });
